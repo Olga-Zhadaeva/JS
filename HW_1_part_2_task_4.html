@@ -1,0 +1,28 @@
+<!-- 4***:
+Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке: -->
+
+<html>
+        <script>
+const checkAge = function (age) {
+    age = Number (age);
+    if (!isNaN(age)) {
+         if (age < 18) {
+             alert("You don't have access cause your age is " + age + " It's less then 18")
+         }
+         else if (age >= 18 && age < 61) {
+             alert("Welcome!")
+         }
+         else if (age > 61) {
+             alert("Keep calm and look Culture channel")
+         } else {
+            alert("Technical work")
+         }
+     } else { 
+         alert("Invalid data type")
+     } 
+ };
+
+let agePrompt = prompt("Enter age")
+checkAge (agePrompt);
+</script>
+</html>
